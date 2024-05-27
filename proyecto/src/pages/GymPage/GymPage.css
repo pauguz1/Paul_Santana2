@@ -1,0 +1,87 @@
+/* para la seccion de fotografia (herramientas)*/
+
+.tools{
+  width: 85%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: var(--redondo1);
+  background: var(--fondo2);
+  padding: var(--relleno);
+  margin: auto;
+}
+.tools > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tools > div img{
+  width: 50px;
+  height: 50px;
+}
+.tools > div span{
+  font-family: var(--fuente);
+  color: var(--text-color2);
+  font-size: var(--font-size2);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container-images{
+  max-width: 380px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-images img{
+  width: 100%;
+  height: auto;
+}
+
+
+/* para la seccion del gym */
+
+.container-gym{
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+
+.container-gym > div{
+  width: fit-content;
+  border-radius: var(--redondo1);
+  background: var(--fondo2);
+  padding: var(--relleno2);
+  color: var(--text-color2);
+}
+.container-gym > div > h2{
+  font-size: var(--font-size2);
+  font-family: var(--fuente);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.container-gym > div > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.container-gym > div > div img{
+  width: 50px;
+  height: 50px;
+  padding: var(--relleno);
+}
+.container-gym > div > div span{
+  font-family: var(--fuente);
+  font-size: var(--font-size2);
+}

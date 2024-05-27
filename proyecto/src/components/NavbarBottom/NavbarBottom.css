@@ -1,0 +1,122 @@
+
+
+
+
+.selected::after{
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--text-color2);  
+  border-radius: var(--redondo1);
+}
+
+
+.navbar-bottom{
+  width: 100%;
+  background: var(--fondo2);
+  padding: var(--relleno1);
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 0px var(--relleno3) var(--relleno3);
+  box-sizing: border-box;
+}
+
+
+
+.navbar-bottom-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-bottom-item:active{
+  transform: scale(0.96);
+  transition-duration: 150ms;
+}
+
+.navbar-bottom-item img{
+  height: 30px;
+  width: 30px;
+  user-select: none;
+}
+.navbar-bottom-item span{
+  color: var(--text-color2);
+  font-size: var(--font-size3);
+}
+
+
+/* para la seccion de me */
+
+.me{
+  position: fixed;
+  width: 80%;
+  background: var(--fondo2);
+  color: var(--text-color2);
+  border-radius: var(--redondo1);
+  padding: var(--relleno);
+  bottom: 5rem;
+  animation: var(--animacion-burbuja);
+  max-width: 380px;
+}
+.me h2, .me h3{
+  font-family: var(--fuente-strong);
+  letter-spacing: normal;
+  user-select: none;
+}
+.me h2:first-child{
+  margin-bottom: 15px;
+}
+.me h2{
+  font-size: var(--font-size2);
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.me h3{
+  font-size: var(--font-size3);
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.contact-me{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.contact-me h1{
+  margin: 0px;
+  font-family: var(--fuente-strong);
+  font-size: var(--font-size-titulo1);
+  margin-right: 5px;
+  user-select: none;
+}
+.contact-me h3{
+  align-self: flex-end;
+}
+
+.contact-social{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-social img{
+  padding: var(--relleno2);
+  user-select: none;
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px){
+  .navbar-bottom{
+      justify-content: center;
+  }
+  .navbar-bottom div{
+      padding-left: var(--relleno);
+      padding-right: var(--relleno);
+  }
+}

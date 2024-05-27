@@ -1,0 +1,33 @@
+
+
+.index-page{
+  width: 100%;
+}
+
+
+.index-page{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../../public/images/imagenPrincipal.png');
+  /* background-repeat: no-repeat;  No repetir la imagen */
+  justify-content: space-between;
+  animation: var(--animacion-burbuja);
+  width: 100%;
+}
+.index-page span:first-child{
+  margin-top: 50px;
+  font-size: var(--font-size-titulo1);
+  font-family: var(--fuente-strong);
+  color: var(--text-color2);
+  text-align: center;
+  user-select: none;
+}
+
+.index-page span:last-child{
+  font-size: var(--font-size2);
+  font-family: var(--fuente-strong);
+  color: var(--text-color2);
+  text-align: center;
+  user-select: none;
+  margin-bottom: 10px;
+}
